@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header class="header">
+            <img class="logo" src="IMAGENES/logo.png" alt="logo de Alura">
+            <h1 class="titulo">Encriptador de Textos</h1>
+        </header>
+
+        <main class="container">
+
+            <div class="left">
+                <textarea id="ingresartexto" type="text" class="textoencriptado" rows="8" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="left-inferior">
+                    <p><img src="IMAGENES/bi_exclamation-circle-fill.png" alt="">Solo letras minúsculas y sin acentos</p>
+                    <div class="botones-left">
+                        <button id="botonencriptar" type="button" class="botonencriptar">Encriptar</button>
+                        <button id="botondesencriptar" type="button" class="botondesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right" class="right ajustar">
+                <img id="muñeco" class="muñeco" src="IMAGENES/muñeco.png" alt="muñero esperando datos para encriptar">
+                <textarea id="mensajefinal" class="mensaje_final ajustar" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="texto_informativo" class="texto_informativo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botoncopiar" type="button" class="botoncopiar">Copiar</button>
+            </div>
+            
+        </main>
+
+           <footer>
+            <p class="Copyright">&copy Copyright 2024 - creado por Bryan Chumpitaz</p>
+            <a href="https://www.linkedin.com/in/bryanchumpitazmechan/" target="_blank" rel="">
+                <img src="IMAGENES/linkedin.svg" alt="logo_linkedin" class="linkedin">
+            </a>
+            <a href="https://github.com/bchumpitazm" target="_blank" rel="">
+                <img src="IMAGENES/github.svg" alt="logo_github" class="github">
+            </a>
+        </footer>
+
+    </body>
+
+    <script src="app.js"></script>
+</html>
